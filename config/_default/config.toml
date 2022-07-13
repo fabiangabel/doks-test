@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://fabiangabel.github.io/doks/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
