@@ -8,14 +8,23 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: bullseye
 
     steps:
     - name: Check out project
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
+      
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - uses: nikeee/setup-pandoc@v1
+      with:
+        pandoc-version: '2.18' # The pandoc version to download (if necessary) and use.
+    - run: echo "# Test" | pandoc -t html
 
     - name: Set up Node.js 
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: 18.5
 
