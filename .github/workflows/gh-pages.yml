@@ -27,6 +27,10 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18.5
+    
+    - name: set baseurl
+    - run:
+        sed -i -e "s;baseurl.*;baseurl = \"/test//\";" config/production/config.toml
 
     - name: Install dependencies
       run: npm install
