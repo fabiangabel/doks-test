@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fabiangabel.github.io/doks/sitemap.xml
+Sitemap: /doks-test/sitemap.xml
