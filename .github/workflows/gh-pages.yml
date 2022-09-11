@@ -30,7 +30,7 @@ jobs:
     
     - name: set baseurl
       run:
-        sed -i -e "s;baseurl.*;baseurl = \"/test//\";" config/production/config.toml
+        sed -i -e "s;baseurl.*;baseurl = \"/${{ github.event.repository.name }}/\";" config/production/config.toml
 
     - name: Install dependencies
       run: npm install
