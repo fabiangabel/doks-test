@@ -1,2 +1,2 @@
-baseurl = "/doks-test"
+baseurl = "/doks-test/"
 canonifyURLs = false
